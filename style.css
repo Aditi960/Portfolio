@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Playwrite GB S", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    background-color: black;
+    flex-direction: column; /* Allows the static and dynamic text to stack vertically */
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background-color: black; /* Background color of the box */
+    border: 2px solid #605678; /* Border color and thickness */
+    padding: 200px; /* Space inside the box */
+    margin: 0; /* Space outside the box */
+    border-radius: 10px; /* Optional: Rounds the corners of the box */
+    width: 1518px; /* Width of the box */
+    height: 600px; 
+}
+.wrapper .static-txt{
+    color:#8ABFA3;
+    font-size:55px;
+    font-weight: 400;
+    
+    text-align: left;
+    align-self: flex-start; /* Aligns "Hello, I'm" text to the left within the .wrapper */
+   
+
+}
+.wrapper .dynamic-txts{
+    
+    line-height: 80px;
+    height:110px;
+    text-align: center; /* Centers the text horizontally */
+    margin: 20px; 
+    overflow: hidden;
+    
+
+}
+.dynamic-txts li{
+    list-style:none;
+    color:#605678;
+    font-size:60px;
+    font-weight: 500;
+    top:0;
+    position: relative;
+    margin-left: 5px;
+    
+    animation:slide 12s steps(4)infinite;
+    
+}
+@keyframes  slide{
+    100%{
+        top:-360px;
+    }    
+}
+.dynamic-txts li{
+    position : relative;
+}
+.dynamic-txts li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid #605678;
+    animation: typing 3s steps(22) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.nav-cotainer{
+    color: white;
+}
+
