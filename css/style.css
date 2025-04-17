@@ -35,7 +35,7 @@ ul
     min-height: 100vh;
     display: block;
     position: fixed;
-    left: 335px;
+    left: 332px;
     top:0;
     right:0;
     z-index: 0;
@@ -112,9 +112,9 @@ ul
     background: var(--bg-black-100);
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: none;
     align-items: center;
-    
+
 }
 .aside .nav-toggler span
 {
@@ -132,6 +132,17 @@ ul
     background: var(--skin-color);
     position: absolute;
     top: -6px;
+    left:0;
+
+}
+.aside .nav-toggler span::after
+{
+    content: ' ';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
     left:0;
 
 }
