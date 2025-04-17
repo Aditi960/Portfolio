@@ -112,6 +112,9 @@ ul
     background: var(--bg-black-100);
     align-items: center;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    
 }
 .aside .nav-toggler span
 {
