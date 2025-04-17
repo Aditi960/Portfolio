@@ -62,6 +62,30 @@ ul
     margin-right: -15px;
     position: relative;
 }
+.btn-hire-me
+{
+    font-size:16px;
+    margin-left: 15px;
+    font-weight: 500;
+    color: white;
+    border-radius: 40px;
+    background:var(--skin-color);
+    padding: 10px 25px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+
+}
+.btn-hire-me:hover
+{
+    background: linear-gradient(135deg, #ff3c6e, #ff8a5c);
+    color: white;
+    box-shadow: none; 
+    transform: scale(1.05);
+
+}
 /* aside */
 .aside
 {
