@@ -69,7 +69,6 @@ ul
     font-weight: 500;
     color: white;
     border-radius: 40px;
-    border: ;
     background:var(--skin-color);
     padding: 10px 25px;
     display: inline-block;
@@ -297,3 +296,4 @@ h3.my-profession
     border-radius: 5px;
     height: 300px;
 }
+
