@@ -404,12 +404,12 @@ h3.my-profession
 .about .about-content .personal-info .button{
     margin-top: 30px;
 }
-.about .about-content .skills
-{
-    flex:0 0 20%;
-    max-width: 20%;
-    margin-top: 40px;
+.about .about-content .skills {
+    flex: 0 0 30%;         /* previously 20% */
+    max-width: 30%;        /* previously 20% */
+    margin-top: 30px;
 }
+
 .info-container p 
 {
     margin: 5px 0;
